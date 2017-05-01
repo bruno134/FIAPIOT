@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1524CFCC1E3E1E88001DF806 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1524CFCB1E3E1E88001DF806 /* GoogleService-Info.plist */; };
+		1524CFCE1E3E2380001DF806 /* Acesso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1524CFCD1E3E2380001DF806 /* Acesso.swift */; };
+		1524CFD01E3E3692001DF806 /* AcessoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1524CFCF1E3E3692001DF806 /* AcessoCell.swift */; };
+		1560C3881D71DA2800C27A7A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3861D71DA2800C27A7A /* Model.xcdatamodeld */; };
+		1560C38E1D71FA4100C27A7A /* Lista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C38A1D71FA4100C27A7A /* Lista.swift */; };
+		1560C39D1D732CBF00C27A7A /* Tarefa+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C39B1D732CBF00C27A7A /* Tarefa+CoreDataProperties.swift */; };
+		1560C39E1D732CBF00C27A7A /* Tarefa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C39C1D732CBF00C27A7A /* Tarefa.swift */; };
+		1560C3A11D732D3A00C27A7A /* Lista+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C39F1D732D3A00C27A7A /* Lista+CoreDataProperties.swift */; };
+		1560C3A41D7336EA00C27A7A /* ListaTarefasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3A31D7336EA00C27A7A /* ListaTarefasViewController.swift */; };
+		1560C3A61D73496500C27A7A /* SeletorIconeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3A51D73496500C27A7A /* SeletorIconeTableViewController.swift */; };
+		1560C3A81D736E1C00C27A7A /* AdicionaListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3A71D736E1C00C27A7A /* AdicionaListaViewController.swift */; };
+		1560C3AA1D736F0900C27A7A /* ListaTarefa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3A91D736F0900C27A7A /* ListaTarefa.swift */; };
+		1560C3AC1D737C3A00C27A7A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1560C3AB1D737C3A00C27A7A /* Utils.swift */; };
+		1560C3B21D7503B000C27A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1560C3B01D7503B000C27A7A /* Main.storyboard */; };
+		1583CB081D98B24D0079C0C5 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1583CB061D98B24D0079C0C5 /* UserNotifications.framework */; };
+		1583CB091D98B24D0079C0C5 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1583CB071D98B24D0079C0C5 /* UserNotificationsUI.framework */; };
+		159307711D66872500F73C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159307701D66872500F73C80 /* AppDelegate.swift */; };
+		159307781D66872500F73C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159307771D66872500F73C80 /* Assets.xcassets */; };
+		1593077B1D66872500F73C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 159307791D66872500F73C80 /* LaunchScreen.storyboard */; };
+		159307831D66893400F73C80 /* ListaItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159307821D66893400F73C80 /* ListaItensViewController.swift */; };
+		159307851D668B2A00F73C80 /* ItemLista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159307841D668B2A00F73C80 /* ItemLista.swift */; };
+		159307871D668E7500F73C80 /* ItemListaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159307861D668E7500F73C80 /* ItemListaCell.swift */; };
+		159307891D68F63200F73C80 /* AdicionaTarefaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159307881D68F63200F73C80 /* AdicionaTarefaViewController.swift */; };
+		374D03141D920DE100879665 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D03131D920DE100879665 /* constants.swift */; };
+		37C3F4631D91EF6C0035DAD7 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3F4621D91EF6C0035DAD7 /* DataServices.swift */; };
+		B210E819B819F59C3FD66B14 /* Pods_Organiza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF2ABAC6A8E3628FEA21A5 /* Pods_Organiza.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1524CFCB1E3E1E88001DF806 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1524CFCD1E3E2380001DF806 /* Acesso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acesso.swift; sourceTree = "<group>"; };
+		1524CFCF1E3E3692001DF806 /* AcessoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcessoCell.swift; sourceTree = "<group>"; };
+		1560C3871D71DA2800C27A7A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1560C38A1D71FA4100C27A7A /* Lista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Lista.swift; path = ../Lista.swift; sourceTree = "<group>"; };
+		1560C39B1D732CBF00C27A7A /* Tarefa+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tarefa+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1560C39C1D732CBF00C27A7A /* Tarefa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tarefa.swift; sourceTree = "<group>"; };
+		1560C39F1D732D3A00C27A7A /* Lista+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Lista+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1560C3A31D7336EA00C27A7A /* ListaTarefasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaTarefasViewController.swift; sourceTree = "<group>"; };
+		1560C3A51D73496500C27A7A /* SeletorIconeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeletorIconeTableViewController.swift; sourceTree = "<group>"; };
+		1560C3A71D736E1C00C27A7A /* AdicionaListaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionaListaViewController.swift; sourceTree = "<group>"; };
+		1560C3A91D736F0900C27A7A /* ListaTarefa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaTarefa.swift; sourceTree = "<group>"; };
+		1560C3AB1D737C3A00C27A7A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1560C3B11D7503B000C27A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Organiza/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1583CB051D98AAC40079C0C5 /* Organiza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Organiza.entitlements; sourceTree = "<group>"; };
+		1583CB061D98B24D0079C0C5 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1583CB071D98B24D0079C0C5 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		1593076D1D66872500F73C80 /* Organiza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Organiza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		159307701D66872500F73C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		159307771D66872500F73C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1593077A1D66872500F73C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1593077C1D66872500F73C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		159307821D66893400F73C80 /* ListaItensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaItensViewController.swift; sourceTree = "<group>"; };
+		159307841D668B2A00F73C80 /* ItemLista.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemLista.swift; sourceTree = "<group>"; };
+		159307861D668E7500F73C80 /* ItemListaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListaCell.swift; sourceTree = "<group>"; };
+		159307881D68F63200F73C80 /* AdicionaTarefaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionaTarefaViewController.swift; sourceTree = "<group>"; };
+		2BFD96D1B6EC762F1750B07A /* Pods-Organiza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organiza.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organiza/Pods-Organiza.release.xcconfig"; sourceTree = "<group>"; };
+		374D03131D920DE100879665 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		37C3F4621D91EF6C0035DAD7 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		7AFB880516438F9C84837B07 /* Pods-Organiza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organiza.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organiza/Pods-Organiza.debug.xcconfig"; sourceTree = "<group>"; };
+		E5AF2ABAC6A8E3628FEA21A5 /* Pods_Organiza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Organiza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1593076A1D66872500F73C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1583CB081D98B24D0079C0C5 /* UserNotifications.framework in Frameworks */,
+				1583CB091D98B24D0079C0C5 /* UserNotificationsUI.framework in Frameworks */,
+				B210E819B819F59C3FD66B14 /* Pods_Organiza.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1560C3AD1D73810C00C27A7A /* ListaTarefa */ = {
+			isa = PBXGroup;
+			children = (
+				1560C3A31D7336EA00C27A7A /* ListaTarefasViewController.swift */,
+				1560C3A91D736F0900C27A7A /* ListaTarefa.swift */,
+				1560C3A51D73496500C27A7A /* SeletorIconeTableViewController.swift */,
+				1560C3A71D736E1C00C27A7A /* AdicionaListaViewController.swift */,
+				1560C39F1D732D3A00C27A7A /* Lista+CoreDataProperties.swift */,
+				1560C38A1D71FA4100C27A7A /* Lista.swift */,
+			);
+			name = ListaTarefa;
+			sourceTree = "<group>";
+		};
+		1560C3AF1D73812200C27A7A /* Tarefa */ = {
+			isa = PBXGroup;
+			children = (
+				159307861D668E7500F73C80 /* ItemListaCell.swift */,
+				1560C39B1D732CBF00C27A7A /* Tarefa+CoreDataProperties.swift */,
+				159307881D68F63200F73C80 /* AdicionaTarefaViewController.swift */,
+				159307821D66893400F73C80 /* ListaItensViewController.swift */,
+				159307841D668B2A00F73C80 /* ItemLista.swift */,
+				1560C39C1D732CBF00C27A7A /* Tarefa.swift */,
+			);
+			name = Tarefa;
+			sourceTree = "<group>";
+		};
+		159307641D66872500F73C80 = {
+			isa = PBXGroup;
+			children = (
+				1593076F1D66872500F73C80 /* Organiza */,
+				1593076E1D66872500F73C80 /* Products */,
+				A1E3C2401DBD93F09F5D612D /* Pods */,
+				AF031DFA8FB1DFB2BB91090D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1593076E1D66872500F73C80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1593076D1D66872500F73C80 /* Organiza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1593076F1D66872500F73C80 /* Organiza */ = {
+			isa = PBXGroup;
+			children = (
+				1583CB051D98AAC40079C0C5 /* Organiza.entitlements */,
+				1560C3AF1D73812200C27A7A /* Tarefa */,
+				1560C3AD1D73810C00C27A7A /* ListaTarefa */,
+				1560C3861D71DA2800C27A7A /* Model.xcdatamodeld */,
+				1524CFCB1E3E1E88001DF806 /* GoogleService-Info.plist */,
+				1560C3AB1D737C3A00C27A7A /* Utils.swift */,
+				159307701D66872500F73C80 /* AppDelegate.swift */,
+				374D03131D920DE100879665 /* constants.swift */,
+				37C3F4621D91EF6C0035DAD7 /* DataServices.swift */,
+				159307771D66872500F73C80 /* Assets.xcassets */,
+				1560C3B01D7503B000C27A7A /* Main.storyboard */,
+				1524CFCF1E3E3692001DF806 /* AcessoCell.swift */,
+				159307791D66872500F73C80 /* LaunchScreen.storyboard */,
+				1593077C1D66872500F73C80 /* Info.plist */,
+				1524CFCD1E3E2380001DF806 /* Acesso.swift */,
+			);
+			path = Organiza;
+			sourceTree = "<group>";
+		};
+		A1E3C2401DBD93F09F5D612D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AFB880516438F9C84837B07 /* Pods-Organiza.debug.xcconfig */,
+				2BFD96D1B6EC762F1750B07A /* Pods-Organiza.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF031DFA8FB1DFB2BB91090D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1583CB061D98B24D0079C0C5 /* UserNotifications.framework */,
+				1583CB071D98B24D0079C0C5 /* UserNotificationsUI.framework */,
+				E5AF2ABAC6A8E3628FEA21A5 /* Pods_Organiza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1593076C1D66872500F73C80 /* Organiza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1593077F1D66872500F73C80 /* Build configuration list for PBXNativeTarget "Organiza" */;
+			buildPhases = (
+				73C4915C8C044CB11EC68C7F /* [CP] Check Pods Manifest.lock */,
+				159307691D66872500F73C80 /* Sources */,
+				1593076A1D66872500F73C80 /* Frameworks */,
+				1593076B1D66872500F73C80 /* Resources */,
+				2D991AC2A60CC9ADE00BB6B9 /* [CP] Embed Pods Frameworks */,
+				3C5A760DEF56C56AA2A04EB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Organiza;
+			productName = Organiza;
+			productReference = 1593076D1D66872500F73C80 /* Organiza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		159307651D66872500F73C80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "BRUNO DANIEL NOGUEIRA";
+				TargetAttributes = {
+					1593076C1D66872500F73C80 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5UXDPR3QT6;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 159307681D66872500F73C80 /* Build configuration list for PBXProject "Organiza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 159307641D66872500F73C80;
+			productRefGroup = 1593076E1D66872500F73C80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1593076C1D66872500F73C80 /* Organiza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1593076B1D66872500F73C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1560C3B21D7503B000C27A7A /* Main.storyboard in Resources */,
+				1524CFCC1E3E1E88001DF806 /* GoogleService-Info.plist in Resources */,
+				1593077B1D66872500F73C80 /* LaunchScreen.storyboard in Resources */,
+				159307781D66872500F73C80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D991AC2A60CC9ADE00BB6B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Organiza/Pods-Organiza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C5A760DEF56C56AA2A04EB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Organiza/Pods-Organiza-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C4915C8C044CB11EC68C7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		159307691D66872500F73C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1560C3A61D73496500C27A7A /* SeletorIconeTableViewController.swift in Sources */,
+				1524CFD01E3E3692001DF806 /* AcessoCell.swift in Sources */,
+				1560C39D1D732CBF00C27A7A /* Tarefa+CoreDataProperties.swift in Sources */,
+				1560C39E1D732CBF00C27A7A /* Tarefa.swift in Sources */,
+				159307871D668E7500F73C80 /* ItemListaCell.swift in Sources */,
+				159307831D66893400F73C80 /* ListaItensViewController.swift in Sources */,
+				1560C3A81D736E1C00C27A7A /* AdicionaListaViewController.swift in Sources */,
+				1560C3AC1D737C3A00C27A7A /* Utils.swift in Sources */,
+				1560C3881D71DA2800C27A7A /* Model.xcdatamodeld in Sources */,
+				159307891D68F63200F73C80 /* AdicionaTarefaViewController.swift in Sources */,
+				159307851D668B2A00F73C80 /* ItemLista.swift in Sources */,
+				1560C3AA1D736F0900C27A7A /* ListaTarefa.swift in Sources */,
+				37C3F4631D91EF6C0035DAD7 /* DataServices.swift in Sources */,
+				1560C3A11D732D3A00C27A7A /* Lista+CoreDataProperties.swift in Sources */,
+				159307711D66872500F73C80 /* AppDelegate.swift in Sources */,
+				1560C3A41D7336EA00C27A7A /* ListaTarefasViewController.swift in Sources */,
+				1524CFCE1E3E2380001DF806 /* Acesso.swift in Sources */,
+				1560C38E1D71FA4100C27A7A /* Lista.swift in Sources */,
+				374D03141D920DE100879665 /* constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1560C3B01D7503B000C27A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1560C3B11D7503B000C27A7A /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		159307791D66872500F73C80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1593077A1D66872500F73C80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1593077D1D66872500F73C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: marlon.bsousa@gmail.com (V325Q7S775)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: marlon.bsousa@gmail.com (V325Q7S775)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = NJYST43CB9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1593077E1D66872500F73C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		159307801D66872500F73C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFB880516438F9C84837B07 /* Pods-Organiza.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Organiza/Organiza.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: marlon.bsousa@gmail.com (V325Q7S775)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5UXDPR3QT6;
+				INFOPLIST_FILE = Organiza/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PorteiroIOT.bdn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		159307811D66872500F73C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFD96D1B6EC762F1750B07A /* Pods-Organiza.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Organiza/Organiza.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5UXDPR3QT6;
+				INFOPLIST_FILE = Organiza/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PorteiroIOT.bdn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		159307681D66872500F73C80 /* Build configuration list for PBXProject "Organiza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1593077D1D66872500F73C80 /* Debug */,
+				1593077E1D66872500F73C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1593077F1D66872500F73C80 /* Build configuration list for PBXNativeTarget "Organiza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				159307801D66872500F73C80 /* Debug */,
+				159307811D66872500F73C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1560C3861D71DA2800C27A7A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1560C3871D71DA2800C27A7A /* Model.xcdatamodel */,
+			);
+			currentVersion = 1560C3871D71DA2800C27A7A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 159307651D66872500F73C80 /* Project object */;
+}

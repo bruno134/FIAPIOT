@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Lista" representedClassName=".Lista" syncable="YES">
+        <attribute name="caminhoImagem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" attributeType="String" syncable="YES"/>
+        <relationship name="tarefas" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Tarefa" inverseName="listas" inverseEntity="Tarefa" syncable="YES"/>
+    </entity>
+    <entity name="Tarefa" representedClassName=".Tarefa" syncable="YES">
+        <attribute name="concluido" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dataLembrete" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lembrete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="texto" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listas" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lista" inverseName="tarefas" inverseEntity="Lista" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Lista" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Tarefa" positionX="196" positionY="45" width="128" height="118"/>
+    </elements>
+</model>
